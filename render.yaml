@@ -45,7 +45,4 @@ staticSites:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: bvm-queue-api
-          property: host
+        sync: false  # Set this manually in Render dashboard to your API URL
