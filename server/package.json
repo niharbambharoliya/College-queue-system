@@ -1,0 +1,23 @@
+{
+  "name": "bvm-queue-management-server",
+  "version": "1.0.0",
+  "description": "Backend server for BVM Smart Counter & Queue Management CRM",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "qrcode": "^1.5.3"
+  }
+}
