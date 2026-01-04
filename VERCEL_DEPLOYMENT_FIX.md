@@ -247,3 +247,4 @@ For your current setup (separate frontend/backend):
 
 The NOT_FOUND error occurred because Vercel didn't know your React app uses client-side routing. The `rewrites` configuration tells Vercel: "If the file doesn't exist, serve index.html and let React Router handle it." This is a common gotcha when deploying SPAs, but once understood, it's easy to prevent.
 
+
