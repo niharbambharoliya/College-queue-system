@@ -29,7 +29,12 @@ const __dirname = path.dirname(__filename);
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+    origin: [
+        'http://localhost:5173',
+        'http://127.0.0.1:5173',
+        // Production frontend URLs (update after deployment)
+        /\.netlify\.app$/,  // Allow all Netlify subdomains
+    ],
     credentials: true
 }));
 app.use(express.json());
